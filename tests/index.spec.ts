@@ -5,7 +5,7 @@ test('title is correct', async ({ page }) => {
   await expect(page).toHaveTitle('Home');
 
   await page.goto('/about');
-  await expect(page).toHaveTitle('Foo');
+  await expect(page).toHaveTitle('About');
 
   await page.goto('/blog');
   await expect(page).toHaveTitle('Blog');
